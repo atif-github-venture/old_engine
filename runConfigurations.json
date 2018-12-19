@@ -1,0 +1,190 @@
+{
+  "default": {
+    "recordVideo": false,
+    "videoUploadOnPass": false,
+    "commandTimeout": "300",
+    "idleTimeOut": "240",
+    "tunnelIdentifier": "tunnelPool",
+    "extendedDebugging": false,
+    "autoAcceptAlerts": true,
+    "nativeWebScreenshot": false,
+    "rotatable": true,
+    "nativeWebTap": true,
+    "ensureCleanSession": true
+  },
+  "DESKTOP_MAC_CHROME": {
+    "platform": "mac 10.13",
+    "browserName": "chrome",
+    "version": "70.0",
+    "screenResolution": "1280x960"
+  },
+  "DESKTOP_MAC_SAFARI": {
+    "safariAllowPopups": "true",
+    "unexpectedAlertBehaviour": "accept",
+    "platform": "mac 10.13",
+    "browserName": "safari",
+    "version": "12.0",
+    "screenResolution": "1280x960"
+  },
+  "DESKTOP_WINDOWS_CHROME": {
+    "platform": "Windows 10",
+    "browserName": "chrome",
+    "version": "70.0",
+    "screenResolution": "1280x960"
+  },
+  "DESKTOP_WINDOWS_MICROSOFT_EDGE": {
+    "platform": "Windows 10",
+    "browserName": "MicrosoftEdge",
+    "version": "17.17134",
+    "screenResolution": "1280x960"
+  },
+  "DESKTOP_WINDOWS_FIREFOX": {
+    "platform": "Windows 10",
+    "browserName": "firefox",
+    "version": "63.0",
+    "screenResolution": "1280x960"
+  },
+  "ANDROID_TABLET": {
+    "unicodeKeyboard": true,
+    "resetKeyboard": true,
+    "appiumVersion": "1.9.1",
+    "deviceName": "Samsung Galaxy Tab S3 GoogleAPI Emulator",
+    "deviceOrientation": "portrait",
+    "browserName": "Chrome",
+    "platformVersion": "7.1",
+    "platformName": "Android"
+  },
+  "IOS_TABLET": {
+    "unicodeKeyboard": true,
+    "resetKeyboard": true,
+    "safariAllowPopups": "true",
+    "unexpectedAlertBehaviour": "accept",
+    "appiumVersion": "1.9.1",
+    "deviceName": "iPad Pro (9.7 inch) Simulator",
+    "deviceOrientation": "portrait",
+    "platformVersion": "12.0",
+    "platformName": "iOS",
+    "browserName": "Safari"
+  },
+  "IOS_MOBILE": {
+    "unicodeKeyboard": true,
+    "resetKeyboard": true,
+    "safariAllowPopups": "true",
+    "unexpectedAlertBehaviour": "accept",
+    "appiumVersion": "1.9.1",
+    "deviceName": "iPhone XS Simulator",
+    "deviceOrientation": "portrait",
+    "platformVersion": "12.0",
+    "platformName": "iOS",
+    "browserName": "Safari"
+  },
+  "ANDROID_MOBILE": {
+    "unicodeKeyboard": true,
+    "resetKeyboard": true,
+    "appiumVersion": "1.9.1",
+    "deviceName": "Android GoogleAPI Emulator",
+    "deviceOrientation": "portrait",
+    "browserName": "Chrome",
+    "platformVersion": "7.1",
+    "platformName": "Android"
+  },
+  "LOCAL_FIREFOX": {
+    "className": "Firefox",
+    "binaryKey": "webdriver.gecko.driver",
+    "binaryPath": "./src/test/resources/drivers/geckodriver",
+    "options": [
+      "disable-infobars",
+      "--test-type",
+      "--disable-extensions",
+      "--start-maximized"
+    ]
+  },
+  "LOCAL_CHROME": {
+    "className": "Chrome",
+    "binaryKey": "webdriver.chrome.driver",
+    "binaryPath":"./src/test/resources/drivers/chromedriver233",
+    "options": [
+      "disable-infobars",
+      "--test-type",
+      "--disable-extensions",
+      "--start-maximized"
+    ]
+  },
+  "LOCAL_CHROME_IOS_MOBILE_EMULATION": {
+    "className": "Chrome",
+    "binaryKey": "webdriver.chrome.driver",
+    "binaryPath": "./src/test/resources/drivers/chromedriver233",
+    "device": {
+      "mobileEmulation": {
+        "deviceName": "iPhone X"
+      }
+    },
+    "options": [
+      "--ignore-certificate-errors"
+    ]
+  },
+  "LOCAL_CHROME_ANDROID_MOBILE_EMULATION": {
+    "className": "Chrome",
+    "binaryKey": "webdriver.chrome.driver",
+    "binaryPath": "./src/test/resources/drivers/chromedriver233",
+    "device": {
+      "mobileEmulation": {
+        "deviceName": "Galaxy S5"
+      }
+    },
+    "options": [
+      "--ignore-certificate-errors"
+    ]
+  },
+  "LOCAL_CHROME_IPAD_EMULATION": {
+    "className": "Chrome",
+    "binaryKey": "webdriver.chrome.driver",
+    "binaryPath": "./src/test/resources/drivers/chromedriver233",
+    "device": {
+      "mobileEmulation": {
+        "deviceName": "iPad"
+      }
+    },
+    "options": [
+      "--ignore-certificate-errors"
+    ]
+  },
+  "LOCAL_SAFARI": {
+    "className": "Safari"
+  },
+  "LOCAL_APPIUM_IOS_MOBILE":{
+    "platform": "ios",
+    "browserName": "ios",
+    "deviceName": "iPhone XS Simulator",
+    "automationName": "XCUITest",
+    "clearSystemFiles": true,
+    "platformVersion": "12.0"
+  },
+
+  "LOCAL_APPIUM_IOS_TABLET":{
+    "platform": "ios",
+    "browserName": "ios",
+    "deviceName": "iPad Pro (9.7 inch) Simulator",
+    "automationName": "XCUITest",
+    "clearSystemFiles": true,
+    "platformVersion": "12.0"
+  },
+
+  "LOCAL_APPIUM_ANDROID_MOBILE":{
+    "platform": "Android",
+    "platformVersion": "7.1",
+    "browserName": "chrome",
+    "deviceName": "Android GoogleAPI Emulator"
+  },
+
+  "LOCAL_APPIUM_ANDROID_TABLET":{
+    "platform": "Android",
+    "platformVersion": "7.1",
+    "browserName": "chrome",
+    "deviceName": "Samsung Galaxy Tab S3 GoogleAPI Emulator"
+  }
+}
+
+
+
+
